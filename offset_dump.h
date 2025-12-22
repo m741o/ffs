@@ -1,6 +1,5 @@
-// Roblox PID: 6068 | Base: 0x7FF739A80000
-// Roblox Version: unknown
-// Dumped at: 22.12.2025 15:04
+// Roblox Version: version-5b077c09380f4fe6
+// Dumped at: 22.12.2025
 // Total FFlags: 12055
 #pragma once
 
