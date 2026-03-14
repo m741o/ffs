@@ -3,6 +3,9 @@
 
 ### MY LISTS:
 
+* guide.md
+⋅⋅* a guide to better your performance while using any fflag list, reccommended to use.
+
 * fflags_dial.json
 ⋅⋅* this is a __universal list__, which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, disabled compression, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership**
 ```
