@@ -17,7 +17,7 @@ weird render distance / black skybox side (fix: set zplane to 4000)
 ```
 
 #### _fflags_flop_physics.json_
-abusive The Strongest Battlegrounds fflag list, not tested on others. which does the following: *removed damage on floor collision from throws*
+* abusive The Strongest Battlegrounds fflag list, not tested on others. which does the following: *removed damage on floor collision from throws*
 
 #### _illegal_fflags.txt_
 * generally op fflags, just read the name to know what it does.
@@ -26,4 +26,4 @@ abusive The Strongest Battlegrounds fflag list, not tested on others. which does
 ### MY OFFSETS:
 
 #### _ffsoffset_dump.hpp_
-offsets for fflags use ( I DON'T UPDATE THEM OFTEN, RELY ON imtheo.lol FOR OFFSETS RATHER THAN THIS.
+* offsets for fflags use ( I DON'T UPDATE THEM OFTEN, RELY ON imtheo.lol FOR OFFSETS RATHER THAN THIS.
