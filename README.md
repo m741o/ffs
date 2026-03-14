@@ -3,10 +3,10 @@
 
 ### MY LISTS:
 
-* guide.md
+###### _guide.md_
 a guide to better your performance while using any fflag list, reccommended to use.
 
-* fflags_dial.json
+###### _fflags_dial.json_
 this is a __universal list__, which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, disabled compression, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership**
 ```
 __KNOWN BUGS AND FIXES__
@@ -16,10 +16,10 @@ players looking choppy (fix: set framebuffer to 1)
 weird render distance / black skybox side (fix: set zplane to 4000)
 ```
 
-* fflags_flop_physics.json
+###### _fflags_flop_physics.json_
 abusive The Strongest Battlegrounds fflag list, not tested on others. which does the following: *removed damage on floor collision from throws*
 
-* illegal_fflags.txt
+###### _illegal_fflags.txt_
 generally op fflags, just read the name to know what it does.
 
 
