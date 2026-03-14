@@ -4,9 +4,9 @@
 ### MY LISTS:
 
 * fflags_dial.json
-⋅⋅* this is a __universal list__, which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, disabled compression, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership**
-**KNOWN BUGS AND FIXES**
+⋅⋅* this is a __universal list__, which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, disabled compression, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership****KNOWN BUGS AND FIXES**
 ```
+__KNOWN BUGS AND FIXES__
 serv hitbox pos desyncing (fix: reset every time you join a game)
 weird shadow lines on the grounds (fix: delete shadowmapbias)
 players looking choppy (fix: set framebuffer to 1)
