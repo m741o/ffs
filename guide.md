@@ -32,7 +32,7 @@ DFIntMaxClientSimulationRadius
 
 - add `DFIntTaskSchedulerTargetFps` for custom fps cap
 
-- [calculate runtime (not reccomended)](https://configurate-roblox-runtime.vercel.app/), change them, & remove the commas
+- [calculate runtime](https://configurate-roblox-runtime.vercel.app/), change them, & remove the commas
 
 
 # step 2 (adding whitelisted fflags)
