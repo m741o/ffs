@@ -1,8 +1,0 @@
-	"DFIntMaximumUnstickForceInGs": "1",
-	"DFIntMaximumFreefallMoveTimeInTenths": "-1",
-	"DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "50000",
-	"DFIntDebugSimPhysicsSteppingMethodOverride": "0",
-	"DFIntSmoothTerrainPhysicsRayAabbSlop": "1",
-	"DFIntMaxMissedWorldStepsRemembered": "1147483647",
-	"DFIntSolidFloorPercentForceApplication": "0",
-	"DFIntNonSolidFloorPercentForceApplication": "0",
