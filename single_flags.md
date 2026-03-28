@@ -419,7 +419,7 @@ it gives a lot of performance boost, hard to explain
 ```
 
 ## more caching ig
-Disk Cache
+disk cache
 ```json
 {
     "DFIntHttpCacheCleanDownToTotalSpaceMiB": "8192",
@@ -429,7 +429,7 @@ Disk Cache
 }
 ```
 
-RAM Cache
+RAM cache (16GB OR MORE)
 ```json
 {
     "DFIntMemCacheMaxCapacityMB": "256",
