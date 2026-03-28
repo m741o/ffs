@@ -1,7 +1,7 @@
 # for your own custom list, USE `guide.md` FIRST BEFORE ADDING ANYTHING ELSE
 
 # illegals in flemish bot (<@1285938242801242194>)
-|| ```
+```
 DFIntGameNetLocalSpaceMaxSendIndex
 DFIntMaximumUnstickForceInGs
 DFIntMaximumFreefallMoveTimeInTenths
@@ -15,7 +15,7 @@ DFIntSmoothTerrainPhysicsRayAabbSlop
 DFIntMaxMissedWorldStepsRemembered
 DFIntSolidFloorPercentForceApplication
 DFIntNonSolidFloorPercentForceApplication
-``` ||
+```
 
 ## reduced animation latency
 ```json
@@ -128,7 +128,7 @@ DFIntNonSolidFloorPercentForceApplication
 ```
 
 ## better garbage collection
-```
+```json
 { 
 	"DFIntLuaGcBoost": "3",
 	"DFIntLuaGcMaxKb": "4096",
@@ -176,7 +176,8 @@ DFIntNonSolidFloorPercentForceApplication
 ```json
 {
 	"DFIntMaxFramesToSend": "2147483647"
-}```
+}
+```
 (set to 1 for stability)
 
 ## disable acknowledgements growth
@@ -212,9 +213,8 @@ DFIntNonSolidFloorPercentForceApplication
 ```
 
 ## gpu caching
-idk
-```
-(8GB+ VRAM)
+idk (8GB+ VRAM)
+```json
 {
 	"DFIntRenderTextureTotalBudgetMB": "8192",
 	"DFIntRenderTextureTotalBudgetCount": "65536",
@@ -236,7 +236,7 @@ idk
 ```
 
 ## better packets
-```
+```json
 {
 	"DFIntNetworkStopProducingPacketsToProcessThresholdMs": 0,
 	"DFIntMaxWaitTimeBeforeForcePacketProcessMS": 1,
@@ -254,7 +254,7 @@ idk
 ```
 
 ## lowered input delay
-```
+```json
 {
 	"FIntCLI20390_2": "0",
 	"FFlagRobloxInputUsesRuntime2": "True",
@@ -283,7 +283,7 @@ idk
 
 ## fixed hitbox
 not sure
-```
+```json
 {
 	"FIntTaskSchedulerTargetFps": 240,
 	"DFIntSmoothNetPhysicsSendRate": 60,
@@ -301,7 +301,7 @@ not sure
 ```
 
 ## illegals with values
-```
+```json
 	"DFIntMaximumUnstickForceInGs": "1",
 	"DFIntMaximumFreefallMoveTimeInTenths": "-1",
 	"DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "50000",
@@ -321,10 +321,11 @@ not sure
 	"DFIntRakNetMtuValue2InBytes": "1412",
 	"DFIntRakNetMtuValue3InBytes": "1412",
 	"DFIntRakNetPacketTracingMinMTUSize": "1412"
-}```
+}
+```
 
 optional bypass (1518, stable) OUTDATED, CREATED PRE-WHITELIST
-```
+```json
 {
 	"DFIntConnectionMTUSize": "1472",
 	"DFIntCrossPlatformMinMTUSize": "1472",
@@ -336,7 +337,7 @@ optional bypass (1518, stable) OUTDATED, CREATED PRE-WHITELIST
 ```
 
 ## disable telemetry (performance)
-```
+```json
 {
 	"FIntOpenTelemetryScheduleDelayMillis": "2147483647",
 	"FIntLogTelemetrySinkIntervalSeconds": "2147483647", 
@@ -368,14 +369,14 @@ optional bypass (1518, stable) OUTDATED, CREATED PRE-WHITELIST
 ```
 
 ## instance pooling
-```
+```json
 {
 	"FStringInstancesToPoolByName": "Part:4096;MeshPart:4096;WeldConstraint:4096;Motor6D:2048;Attachment:2048;Frame:2048;ImageLabel:2048;TextLabel:2048;Folder:2048;Sound:2048;Humanoid:1024;ParticleEmitter:1024;Trail:1024;Beam:1024;RemoteEvent:1024;Script:1024;LocalScript:1024;ModuleScript:1024;WedgePart:1024;CornerWedgePart:1024;TrussPart:1024;Weld:1024;Decal:1024;Texture:1024;SpecialMesh:1024;UIStroke:1024;BillboardGui:1024;ImageButton:1024;TextButton:1024;ScrollingFrame:1024;UIGridLayout:1024;UIListLayout:1024;Highlight:1024;Tool:512;Explosion:512;Fire:512;Smoke:512;Sparkles:512;Light:512;SpotLight:512;PointLight:512;SurfaceLight:512;HingeConstraint:512;BallSocketConstraint:512;SpringConstraint:512;AlignPosition:512;AlignOrientation:512;BodyForce:512;BodyGyro:512;BodyVelocity:512;ProximityPrompt:512;SelectionBox:512;Configuration:512;RemoteFunction:512;Tween:512;Pose:512;KeyframeSequence:512;BoolValue:512;IntValue:512;NumberValue:512;StringValue:512;ObjectValue:512;CFrameValue:512;Vector3Value:512;RayValue:512;BlockMesh:512;CylinderMesh:512;FileMesh:512;ScreenGui:256;SurfaceGui:256;UIScale:256"
 }
 ```
 
 ## light culling
-```
+```json
 {
 	"FFlagDebugForceFSMCPULightCulling": "True",
 	"FFlagFastGPULightCulling3": "True"
@@ -383,7 +384,7 @@ optional bypass (1518, stable) OUTDATED, CREATED PRE-WHITELIST
 ```
 
 ## obviously good performance flags
-```
+```json
 {
 	"FFlagDebugPerfMode": "True",
 	"FFlagHandleAltEnterFullscreenManually": "False",
@@ -395,14 +396,14 @@ optional bypass (1518, stable) OUTDATED, CREATED PRE-WHITELIST
 
 ## performance render distancing ig
 it gives a lot of performance boost, hard to explain
-```
+```json
 {
 	"FIntCameraFarZPlane": "2741"
 }
 ```
 
 ## performance textures
-```
+```json
 {
 	"FIntTerrainArraySliceSize": "4",
 	"FIntTerrainOTAMaxTextureSize": "1024",
