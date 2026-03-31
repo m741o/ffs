@@ -216,10 +216,10 @@ DFIntNonSolidFloorPercentForceApplication
 idk (8GB+ VRAM)
 ```json
 {
-	"DFIntRenderTextureTotalBudgetMB": "8192",
-	"DFIntRenderTextureTotalBudgetCount": "65536",
-	"DFIntRenderTextureLoadingBudgetMB": "4096",
-	"DFIntRenderTextureLoadingMaxMB": "2048",
+	"DFIntRenderTextureTotalBudgetMB": "4096",
+	"DFIntRenderTextureTotalBudgetCount": "32768",
+	"DFIntRenderTextureLoadingBudgetMB": "2048",
+	"DFIntRenderTextureLoadingMaxMB": "1024",
 	"DFIntRbxStorageAvailableDiskSpaceTriggerMB": "256",
 	"DFIntRbxStorageCleanupOldCacheChunkSizeMB": "32",
 	"DFIntRbxStorageDBCleanTargetPercentMaxCapacity": "90",
