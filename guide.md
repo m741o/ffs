@@ -4,8 +4,6 @@
 _**MUST change**_
 - have roblox fps cap at 240
 
-- change `DFIntMemoryUtilityCurveTotalMemoryReserve` & `DFIntMemoryUtilityCurveBaseHundrethsPercent` to your RAM
-
 - change `FStringGraphicsDisableUnalignedDxtGPUNameBlacklist` & `FStringDebugGraphicsPreferredGPUName` to full GPU name
 
 - delete `DFFlagAlwaysSkipDiskCache`  if you have an HDD, add if you're on SSD
