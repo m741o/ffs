@@ -5,40 +5,48 @@ _**MUST change**_
 
 - change `DFIntCanHideGuiGroupId` to the ID of a group you're in
 
-- [calculate frametime](https://fflag-frametime-calc.netlify.app/), change them, & add `DFIntGraphicsOptimizationModeFRMFrameRateTarget` to your monitor refresh rate
+- [calculate frametime](https://fflag-frametime-calc.netlify.app/), change them, & add `DFIntGraphicsOptimizationModeFRMFrameRateTarget` to your monitor refresh rate. after change `FIntPerformanceControlTargetFrameTimeCeilingHundredthsMs` with calculation (1000000 / refresh_rate)
 
-- [calculate runtime](https://configurate-roblox-runtime.vercel.app/), change them, & remove the commas
+- [calculate runtime](https://configurate-roblox-runtime.vercel.app/), change them, & remove the commas.
 
-- change `FStringGraphicsDisableUnalignedDxtGPUNameBlacklist` & `FStringDebugGraphicsPreferredGPUName` to full GPU name, and change these depending on it (delete if lower than smallest amount of gb) **(4 | 8)**
+- change `FStringGraphicsDisableUnalignedDxtGPUNameBlacklist`,  `FStringDebugGraphicsPreferredGPUName` & `FStringDisableHQShadersDx11List` to full GPU name, and change these depending on it **(fflag | formula)**
 ```
-DFIntRenderTextureTotalBudgetMB: 1024 | 4096
-DFIntRenderTextureTotalBudgetCount: 16384 | 32768
-DFIntRenderTextureLoadingBudgetMB: 768 | 2048
-DFIntRenderTextureLoadingMaxMB: 384 | 1024
-```
-
-- change these accordingly to your RAM (delete if lower than smallest amount of gb) **(4 | 8 | 16 | 32)**
-```
-DFIntMemoryUtilityCurveBaseHundrethsPercent: 5000 | 2500 | ? | ?
-DFIntMemoryUtilityCurveTotalMemoryReserve: 51200 | 102400 | 204800 | ?
-DFIntMemCacheMaxCapacityMB: ? | ? | 256 | 512
-FIntDefaultMeshCacheSizeMB: ? | ? | 256 | 512
-FIntAnimationClipCacheBytes: ? | ? | 250000000 | 500000000
+FIntRenderTextureTotalBudgetMB | VRAM_GB * 512
+FIntRenderTextureTotalBudgetCount | VRAM_GB * 4096
+FIntRenderTextureLoadingBudgetMB | VRAM_GB * 256 (max cap 2048)
+FIntRenderTextureLoadingMaxMB | VRAM_GB * 128 (max cap 1024)
 ```
 
-- change this accordingly to your CPU cores (2 | 4)
+- change these accordingly to your RAM **(fflag | formula)**
 ```
-FIntLuaGcParallelMinMultiTasks: 1 | 4
+FIntMemoryUtilityCurveBaseHundrethsPercent | 16000000 / RAM_MB (min cap 2500)
+FIntMemoryUtilityCurveTotalMemoryReserve | RAM_MB * 12.8
+FIntMemCacheMaxCapacityMB | RAM_GB * 24 (min 128)
+FIntDefaultMeshCacheSizeMB | RAM_GB * 24 (min 128)
+DFIntAnimationClipCacheBytes | RAM_GB * 23437500
+FIntMemoryPressureTriggerMB | RAM_MB * 0.4096
+FIntFreeOsMemPercentageBufferPercentage | RAM_GB * 2
+FIntLuauGcGoal | RAM_GB * 128
 ```
 
-- change these 5 ffs to your logical CPU logical processors **(8 | 12 | 16 | 24)**
+- change these accordingly to cpu cores **(fflag | formula)**
 ```
-DFIntRuntimeConcurrency: 8 | 12 | 16 | 24
-FIntTaskSchedulerThreadMin: 7 | 11 | 15 | 23
-FIntTaskSchedulerAutoThreadLimit: 8 | 12 | 16 | 24
-FIntTaskSchedulerAsyncTasksMinimumThreadCount: 3 | 4 | 4 | 12
-DFIntTaskSchedulerJobInitThreads: 7 | 11 | 15 | 23
-DFIntTaskSchedulerJobInGameThreads: 4 | 6 | 8 | 16
+FIntAnimationParallelThreadMax | CPU_CORES
+FIntSimWorldTaskQueueParallelTasks | CPU_CORES
+FIntPhysicsReceiveNumParallelTasks | CPU_CORES
+FIntLuaGcParallelMinMultiTasks | 1 if cores < 4 else 4
+```
+
+- change these accordingly to CPU logical processors **(fflag | formula)**
+```
+FIntRuntimeConcurrency | CPU_THREADS
+FIntTaskSchedulerThreadMin | CPU_THREADS - 1
+FIntTaskSchedulerAutoThreadLimit | CPU_THREADS
+FIntTaskSchedulerJobInitThreads | CPU_THREADS - 1
+FIntInterpolationNumParallelTasks | CPU_THREADS - 1
+FIntTaskSchedulerJobInGameThreads | CPU_THREADS / 2
+FIntParallelAdaptiveInterpolationBatchCount | CPU_THREADS * 12.5
+FIntTaskSchedulerAsyncTasksMinimumThreadCount | 1 | 1 | 4 | 4 | 8 | 12 | SEE FOLLOWING TABLE: (4 | 8 | 12 | 16 | 24 | 32)
 ```
 
 - delete these in case of not having 10gb of free disk space
