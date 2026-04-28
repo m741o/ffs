@@ -9,6 +9,8 @@ _**MUST change**_
 
 - [calculate runtime](https://configurate-roblox-runtime.vercel.app/), change them, & remove the commas.
 
+- take your internet upload speed in mbps and multiply by 125000, then change `FIntDataSenderMaxBandwidthBps` to that value
+
 - change `FStringGraphicsDisableUnalignedDxtGPUNameBlacklist`,  `FStringDebugGraphicsPreferredGPUName` & `FStringDisableHQShadersDx11List` to full GPU name, and change these depending on it **(fflag | formula)**
 ```
 FIntRenderTextureTotalBudgetMB | VRAM_GB * 512
