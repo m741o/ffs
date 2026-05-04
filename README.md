@@ -15,7 +15,7 @@
 * mobile setfflag script
 
 #### _transcendant.json_
-* this is my personal __universal list__ (injector needed), which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, disabled compression, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership**
+* this is my personal __universal list__ (injector needed), which does the following: *optimized networking, best MTU, faster rendering, culling, lower memory use, better compression, better network streaming, forced GPU, better runtime, best frametime, better render distancing, best lighting, favoring performance over quality, reduced CPU load, removed telemetry, better interpolation, better physics, better tick rate, improved sender rate, removed activation timers, enabled network ownership**
 ```
 __KNOWN BUGS AND FIXES__
 weird shadow lines on the grounds (fix: delete shadowmapbias)
